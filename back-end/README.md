@@ -70,14 +70,13 @@ npm start
 
 Isso irá:
 
-- Gerar a documentação Swagger (`swagger.js`)
-- Iniciar o servidor (`server.js`) na porta configurada (padrão: **3000**)
+- Iniciar o servidor (`server.js`) na porta configurada (padrão: **8080**)
 
 ---
 
 ## 📄 Documentação da API
 
-Você pode importar o arquivo Json (`postman\Backend-Softcom-Challenge.postman_collection.json`) diretamente no Postman para visualizar todas as rotas, parâmetros e exemplos de requisições mapeadas automaticamente.
+Você pode importar o arquivo Json (`postman\Backend-Softcom-Challenge.postman_collection.json`) diretamente no Postman para visualizar todas as rotas, parâmetros e exemplos de requisições mapeadas.
 
 ---
 

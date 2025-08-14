@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "c02f0f31-3ecb-4640-81c1-a13fcea63ea2",
-		"name": "Backend-Softcom-Challenge",
+		"_postman_id": "e64b311d-524f-44be-8944-8c0ba5da3eb7",
+		"name": "Backend-Softcom-Challenge Copy",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "33496727"
 	},
@@ -87,7 +87,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzU1MDQ5NTMwLCJleHAiOjE3NTUwNTEzMzB9.BpfJZ4PCtrQ2sYeRQWNqcbdsPYdhpZ6Hr02_vvfpmRY",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU1MTI5NDM1LCJleHAiOjE3NTUxMzEyMzV9.GE32KHGOCXUawHIVZmOKwFbqmymlgjiz2iwhSJ62C3k",
 											"type": "string"
 										}
 									]
@@ -95,7 +95,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8080/api/v1/user/2",
+									"raw": "http://localhost:8080/api/v1/user/1",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -105,7 +105,7 @@
 										"api",
 										"v1",
 										"user",
-										"2"
+										"1"
 									]
 								}
 							},
@@ -126,7 +126,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzU1MDQ5NTMwLCJleHAiOjE3NTUwNTEzMzB9.BpfJZ4PCtrQ2sYeRQWNqcbdsPYdhpZ6Hr02_vvfpmRY",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU1MTI5NDM1LCJleHAiOjE3NTUxMzEyMzV9.GE32KHGOCXUawHIVZmOKwFbqmymlgjiz2iwhSJ62C3k",
 									"type": "string"
 								}
 							]
@@ -135,7 +135,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Produto\",\r\n  \"description\": \"Descrição\",\r\n  \"price\": 299.90\r\n}\r\n",
+							"raw": "{\r\n  \"name\": \"Produto 2\",\r\n  \"description\": \"Descrição 2\",\r\n  \"price\": 299.90\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -166,7 +166,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzU1MDQ5NTMwLCJleHAiOjE3NTUwNTEzMzB9.BpfJZ4PCtrQ2sYeRQWNqcbdsPYdhpZ6Hr02_vvfpmRY",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU1MTI5NDM1LCJleHAiOjE3NTUxMzEyMzV9.GE32KHGOCXUawHIVZmOKwFbqmymlgjiz2iwhSJ62C3k",
 									"type": "string"
 								}
 							]
@@ -197,7 +197,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzU1MDQ5NTMwLCJleHAiOjE3NTUwNTEzMzB9.BpfJZ4PCtrQ2sYeRQWNqcbdsPYdhpZ6Hr02_vvfpmRY",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU1MTI5NDM1LCJleHAiOjE3NTUxMzEyMzV9.GE32KHGOCXUawHIVZmOKwFbqmymlgjiz2iwhSJ62C3k",
 									"type": "string"
 								}
 							]
@@ -205,7 +205,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/v1/item/3",
+							"raw": "http://localhost:8080/api/v1/item/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -215,7 +215,7 @@
 								"api",
 								"v1",
 								"item",
-								"3"
+								"2"
 							]
 						}
 					},
@@ -289,6 +289,82 @@
 								"v1",
 								"item",
 								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Venda",
+			"item": [
+				{
+					"name": "CriarVenda",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU1MTI5NDM1LCJleHAiOjE3NTUxMzEyMzV9.GE32KHGOCXUawHIVZmOKwFbqmymlgjiz2iwhSJ62C3k",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"formaPagamento\": \"cartao\",\r\n  \"itens\": [\r\n    { \"id\": 1, \"quantidade\": 2 },\r\n    { \"id\": 3, \"quantidade\": 1 }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/venda",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"venda"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarVendas",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU1MTI5NDM1LCJleHAiOjE3NTUxMzEyMzV9.GE32KHGOCXUawHIVZmOKwFbqmymlgjiz2iwhSJ62C3k",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/venda",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"venda"
 							]
 						}
 					},

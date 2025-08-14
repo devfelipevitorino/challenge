@@ -10,7 +10,6 @@ import {
     verifyToken,
     isAdmin,
     isModerator,
-    isModeratorOrAdmin,
 } from "../middlewares/authJwt.js";
  
 const router = express.Router();
