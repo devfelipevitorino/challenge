@@ -3,7 +3,7 @@ import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
 import authConfig from "../config/auth.config.js";
 import { Op } from "sequelize";
-import { validaCNPJ, validaEmail } from "../util/validator.js";
+import { validaCNPJ, validaEmail } from "../util/utils.js";
  
 const { user: User, role: Role } = db;
  

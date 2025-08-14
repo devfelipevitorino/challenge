@@ -1,4 +1,5 @@
 import db from "../models/index.js";
+import { calcularTotalVenda } from "../util/utils.js";
 const Venda = db.venda; 
 const Item = db.item; 
 
@@ -23,11 +24,11 @@ export const create = async (req, res) => {
             return res.status(400).json({ message: `Itens não encontrados: ${inexistentes.join(", ")}` });
         }
 
-        let total = 0;
-        itensExistentes.forEach(item => {
-            const quantidade = itens.find(i => i.id === item.id).quantidade || 1;
-            total += parseFloat(item.price) * quantidade;
-        });
+        const total = calcularTotalVenda(itensExistentes.map(item => ({
+            ...item.dataValues,
+            quantidade: itens.find(i => i.id === item.id).quantidade
+        })), formaPagamento);
+
 
         const novaVenda = await Venda.create({ total, formaPagamento, userId });
 

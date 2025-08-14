@@ -80,6 +80,18 @@ Você pode importar o arquivo Json (`postman\Backend-Softcom-Challenge.postman_c
 
 ---
 
+
+## 📌 Funcionalidades
+
+- **Criar usuário**: Cadastro com senha criptografada.
+- **Autenticação/login**: retorna informações do usuário e token JWT.
+- **Criar item**: adiciona um item ao banco do usuário.
+- **Listar itens**: retorna os itens do usuário.
+- **Criar venda**: calcula o valor total com base no preço e quantidade dos itens; aplica desconto de 5% se o pagamento for em dinheiro.
+- **Listar vendas**: retorna todas as vendas do usuário.
+
+---
+
 ## 📌 Observações
 
 - Senhas são criptografadas com **bcrypt**.
